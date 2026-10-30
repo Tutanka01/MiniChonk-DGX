@@ -27,13 +27,6 @@ Want the full story, including what failed? Read the [detailed explanation, in F
 
 ## How it works
 
-```mermaid
-flowchart LR
-    A["UD-IQ1_S GGUF<br/>128 experts, 233 GB"] -->|"AIMER mask,<br/>byte-level slicing"| B["aimer112<br/>112 experts, 206 GB"]
-    B --> C["Head node<br/>llama-server + DSpark draft<br/>about half the layers"]
-    C <-->|"RPC over RDMA<br/>200 GbE"| D["Worker node<br/>ggml-rpc-server<br/>about half the layers"]
-```
-
 1. **Trim.** Each expert is a contiguous slab of bytes inside its tensor, so experts can be removed without decoding
    or re-quantizing anything. The router is sliced with the same mask, and every output is compared with the source.
 2. **Split.** llama.cpp RPC places about half of the layers on each machine, over RDMA when available. The worker
