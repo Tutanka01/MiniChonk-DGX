@@ -1,0 +1,7 @@
+{
+  "usage64": {"quant": "UD-IQ1_S", "experts": 64, "selection": "most routed", "weights_gb": 125.90, "mcq_args": "-c 4096 -b 4096"},
+  "letrim50": {"quant": "UD-IQ1_S", "experts": 64, "selection": "AIMER", "weights_gb": 125.90, "mcq_args": "-c 4096 -b 4096"},
+  "q2_letrim50": {"quant": "UD-Q2_K_XL", "experts": 64, "selection": "AIMER", "weights_gb": 199.69, "mcq_args": "-c 2048 -b 1024 -np 8"},
+  "letrim25": {"quant": "UD-IQ1_S", "experts": 96, "selection": "AIMER", "weights_gb": 179.45, "mcq_args": "-c 4096 -b 4096 -np 8"},
+  "aimer112": {"quant": "UD-IQ1_S", "experts": 112, "selection": "AIMER", "weights_gb": 206.23, "mcq_args": "-c 2048 -b 1024 -np 5"}
+}

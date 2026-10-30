@@ -1,0 +1,5 @@
+usage64 code_python=4.17 en_literature=24.21 en_technical=4.94 fr_literature=30.16 overall=11.62 final=11.62
+letrim50 code_python=3.45 en_literature=29.45 en_technical=4.81 fr_literature=25.94 overall=11.12 final=11.12
+q2_letrim50 code_python=3.05 en_literature=18.63 en_technical=4.26 fr_literature=18.58 overall=8.63 final=8.63
+letrim25 code_python=2.73 en_literature=16.07 en_technical=3.78 fr_literature=10.10 overall=6.45 final=6.45
+aimer112 code_python=2.31 en_literature=13.64 en_technical=2.68 fr_literature=8.79 overall=5.31 final=5.31
